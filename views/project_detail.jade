@@ -1,0 +1,31 @@
+extends layout
+
+block title
+	title Project - 椰子公关
+block css
+	style.
+		.project h3{
+			font-size:38px;
+			font-weight: normal;
+			margin:0 0  140px;
+			text-align: center;
+		}
+		.project img{
+			display: block;
+		}
+block content
+	.project
+		-if(projectId == 1)
+			h3 2016“中信国安杯”世界女子九球世锦赛
+			img(src='/images/project/project1/project1-1.jpg', style='width:944px;margin-bottom:35px;')
+			div(style='position:relative;margin:120px 0 100px 105px;')
+				div(style='width:480px;font-size:18px;') 我们负责本次赛事的媒体推广工作，包括各种稿件的撰写、媒体接待方案的订制、媒体联络及邀请、活动及比赛现场媒体服务、收集舆情制作报告以及其他临时突发工作。
+					br
+					br
+					| 我们为本次比赛撰写稿件60余篇，联络包括中央电视台、人民日报、新华社、中新社、中国体育报、光明日报、中国旅游报、四大门户等等顶级媒体参与报道。通过我们的工作，使得本次比赛成为在中国举办的同级别赛事中曝光量最大的一届，深得赞助商及领导的好评。
+				img(src='/images/project/project1/project1-2.jpg', style='position:absolute;right:20px;top:-90px;width:560px;')
+			div.clearfix(style='margin-bottom:80px;')
+				img(src='/images/project/project1/project1-3.jpg', style='float:left;width:595px;')
+				img(src='/images/project/project1/project1-4.jpg', style='float:right;width:595px;')
+			img(src='/images/project/project1/project1-5.jpg', style='margin:80px 0 95px 120px;width:860px;')
+			img(src='/images/project/project1/project1-6.jpg', style='margin:80px 0 100px 250px;width:950px;')

@@ -1,0 +1,74 @@
+extends layout
+block css
+	link(rel='stylesheet', href='/css/jquery.bxslider.min.css')
+	link(rel='stylesheet', href='/css/index.css')
+block body
+	section.banner
+		a.logo(href="/")
+			img.normal(src="/images/logo.png")
+			img.white(src="/images/logo-white.png")
+		script.
+			document.write('<style>.banner{height:' +window.innerHeight+ 'px;}</style>');
+		ul.bxslider
+			li
+				.banner1
+					img(src='/images/index/banner1.jpg')
+			li
+				.banner2(style='background-image:url("/images/index/banner2.jpg")')
+			li
+				.banner3
+					.img(style='background-image:url("/images/index/banner3.png")')
+			li
+				.banner4(style='background-image:url("/images/index/banner4.jpg")')
+	section.about
+		a(href='/about')
+			.title
+				h3 ABOUT US
+				p 关于椰子
+			.intro 椰子公关的核心团队来自于网易、搜狐、中央美院等超过10年以上媒体经验的专业人才。我们的重点业务包括数字及社交媒体传播、品牌营销、危机公关和事件管理。我们相信沟通的力量，希望通过高效的信息传递，提升企业、品牌和人的价值。凭借多年的行业经验，我们积累了丰富的媒体资源和创意理念，与央视以及各大门户、乐视、爱奇艺、体坛、篮球先锋报等主流媒体有着良好的合作机制；凭借高效的执行力。我们服务了包括华润置地、安踏体育、海尔卡萨帝电器、伊利、Speedo、丰田汽车、中国游泳协会、中国篮球协会、中国小球运动管理中心等众多领域的知名企业及机构。
+	section.nav
+		.clearfix
+			a.nav-item(href='/news')
+				.h3-title
+					h3 NEWS
+					p 新闻
+			a.nav-item(href='/project')
+				.h3-title
+					h3 PROJECT
+					p 项目
+			a.nav-item(href='/alliance')
+				.h3-title
+					h3 SPORT MEDIA ALLIANCE
+					p 体育自媒体联盟
+			a.nav-item(href='/contact')
+				.h3-title
+					h3 CONTACT
+					p 联系
+	section.footer
+		div ©2017 COCO PUBLIC RELATIONS
+block js
+	script(src='/js/jquery-3.2.0.min.js')
+	script(src='/js/jquery.bxslider.min.js')
+	script.
+		$(function(){
+			$('.bxslider').bxSlider({
+				mode: 'horizontal',
+				auto: true,
+				autoStart: true,
+				autoControls: false,
+				controls: false,
+				speed: 800,
+				pause: 3000,
+				pager:false,
+				preloadImages: 'visible',
+				responsive: true,
+				onSlideBefore: function($slideElement, oldIndex, newIndex){
+					if(newIndex == 0){
+						$('.logo').removeClass('show-white');
+					}else{
+						$('.logo').addClass('show-white');
+					}
+				}
+			});
+		})
+

@@ -1,0 +1,24 @@
+extends layout
+block title
+	title News - 椰子公关
+block css
+	style.
+		.news-section {
+			margin-top: 60px;
+		}
+		.news-section img{
+			display: block;
+			width: 100%;
+		}
+		@media screen and (max-width: 1024px) {
+			.news-section {
+				margin-top:40px;
+			}
+		}
+block content
+	section.h2-title.sub-container
+		h2 NEWS
+		p 新闻
+	section.news-section
+		img(src='/images/news/news1.jpg')
+		img(src='/images/news/news2.jpg')

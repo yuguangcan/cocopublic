@@ -1,0 +1,15 @@
+extends layout
+
+block title
+	title Project - 椰子公关
+block css
+	link(rel='stylesheet', href='/css/project.css')
+block content
+	section.h2-title.sub-container
+		h2 PROJECT
+		p 经典项目
+	section.project-section.clearfix
+		each project in projects
+			a(href='/project/#{project.id}')
+				.mask #{project.title}
+				img(src='/images/project/#{project.img}')

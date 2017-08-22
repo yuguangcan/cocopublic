@@ -1,0 +1,211 @@
+body {
+  padding: 0;
+  width: 1200px;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 10;
+  width: 118px;
+}
+.logo .normal {
+  display: block;
+}
+.logo .white {
+  display: none;
+}
+.logo.show-white .normal {
+  display: none;
+}
+.logo.show-white .white {
+  display: block;
+}
+.bx-viewport,
+.bx-wrapper {
+  height: 100% !important;
+  border: 0;
+}
+.bxslider,
+.bxslider li {
+  height: 100%;
+}
+.banner1 {
+  background: #fff;
+}
+.banner1 img {
+  position: absolute;
+  width: 616px;
+  height: 174px;
+  left: 50%;
+  top: 50%;
+  margin-left: -313px;
+  margin-top: -87px;
+}
+.banner2,
+.banner4 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+}
+.banner3 {
+  background: #071c81;
+  position: relative;
+  height: 100%;
+}
+.banner3 .img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.about {
+  background: #000;
+  height: 500px;
+}
+.about a {
+  display: block;
+  position: relative;
+}
+.about .title {
+  position: absolute;
+  top: 105px;
+  left: 95px;
+}
+.about .title h3 {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin: 0;
+  color: #fff;
+}
+.about .title p {
+  font-size: 15px;
+  line-height: 18px;
+  margin: 5px 0;
+  letter-spacing: 5px;
+  color: #fff;
+}
+.about .intro {
+  color: #fff;
+  font-size: 15px;
+  width: 600px;
+  position: absolute;
+  top: 165px;
+  right: 100px;
+}
+.nav {
+  background: #e3e3e3;
+}
+.nav .nav-item {
+  height: 300px;
+  float: left;
+  width: 24.8%;
+  border-right: 1px solid #fff;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+}
+.nav .nav-item:last-child {
+  border: none;
+}
+.nav .h3-title {
+  display: inline-block;
+}
+.nav .h3-title h3 {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 2px;
+}
+.nav .h3-title p {
+  font-size: 15px;
+  line-height: 18px;
+  margin-top: 5px;
+  letter-spacing: 5px;
+}
+.footer {
+  height: 296px;
+  position: relative;
+  background: #fff;
+}
+.footer div {
+  position: absolute;
+  width: 100%;
+  bottom: 64px;
+  left: 0;
+  text-align: center;
+  font-size: 14px;
+  color: #231815;
+}
+@media screen and (max-width: 1024px) {
+  body {
+    width: 100%;
+  }
+  .logo {
+    left: 20px;
+    top: 20px;
+    width: 59px;
+  }
+  .banner1 img {
+    width: 200px;
+    height: 56px;
+    margin-left: -100px;
+    margin-top: -28px;
+  }
+  .about {
+    height: 195px;
+  }
+  .about .title {
+    left: 20px;
+    top: 30px;
+  }
+  .about .title h3 {
+    font-size: 16px;
+  }
+  .about .title p {
+    font-size: 11px;
+    letter-spacing: 3px;
+  }
+  .about .intro {
+    top: 80px;
+    right: 20px;
+    width: 53%;
+    font-size: 9px;
+    height: 90px;
+    overflow: hidden;
+  }
+  .nav .nav-item {
+    height: 94px;
+  }
+  .nav .h3-title h3 {
+    font-size: 9px;
+    line-height: 14px;
+    letter-spacing: 1px;
+  }
+  .nav .h3-title p {
+    font-size: 9px;
+    line-height: 14px;
+    margin: 2px 0 0;
+  }
+  .footer {
+    width: 100%;
+    height: 95px;
+  }
+  .footer div {
+    font-size: 7px;
+    bottom: 20px;
+  }
+}

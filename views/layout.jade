@@ -1,0 +1,19 @@
+doctype html
+html
+  meta(charset='utif-8')
+  meta(name='description', content='椰子公关')
+  meta(name='viewport', content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no')
+  head
+    block title
+      title= 椰子公关
+    link(rel='stylesheet', href='/css/style.css')
+    block css
+  body
+    block body
+      block header
+        include header.jade
+      .container
+        block content
+      block footer
+        include footer.jade
+    block js
